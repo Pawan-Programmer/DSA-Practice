@@ -30,6 +30,6 @@ Each solution may include:
 
 ## Goal
 
-- Practice DSA consistently
-- Improve problem-solving skills
-- Prepare for coding interviews
+- Practice DSA consistently.
+- Improve problem-solving skills.
+- Prepare for coding interviews.
