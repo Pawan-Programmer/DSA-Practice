@@ -1,17 +1,15 @@
 #include <stdio.h>
 int main(){
-    int n = 5;
-    int temp;
-    int arr[5] = {1,2,3,4};
-    arr[2] == 6;
-    for(int i=n;i>=n;i--){
-        temp = arr[i-2];
-        arr[i-1] = temp;
-        temp = 0;
+    int n = 5 , temp;
+    int Arr[5] = {1, 2, 3, 4};
+    for(int i = n; i > n-2; i--){
+        temp = Arr[i-2];
+        Arr[i-1] = temp;
+        
     }
-    //array
-    for(int i=0; i<n ;i++){
-        printf("%d ",arr[i]);
+    Arr[n-3] = 6;
+    for(int i = 0; i < n; i++){
+        printf("%d ", Arr[i]);
     }
     return 0;
 }
