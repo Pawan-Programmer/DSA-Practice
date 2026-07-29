@@ -20,5 +20,13 @@ int main(){
     }
     cout << "Sum of even index terms is: " << sum << endl;
     cout << "Product of odd index terms is: " << prdt << endl;
+    //for largest
+    int ans = Arr[1];
+    for(int i=2;i<=size;i++){
+        if(ans<Arr[i]){
+            ans = Arr[i];
+        }
+    }
+    cout << "Largest number is: " << ans << endl;
     return 0;
 }
