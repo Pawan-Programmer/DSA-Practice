@@ -7,7 +7,7 @@ int Rotate_Matrix(int arr[10][10] , int n){
         for(int j=0;j<n;j++){
             arr2[i][j] = arr[n-1-j][i];
             cout << " " ; 
-        }`
+        } 
         cout << endl;
     }
     cout << "Rotated Array is: " << endl;
