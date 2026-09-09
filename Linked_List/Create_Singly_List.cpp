@@ -1,24 +1,45 @@
 #include <iostream>
+#include <vector>
+#include <algorithm>
+#include <string>
+#include <cmath>
 using namespace std;
 
-struct Node {
+struct node{
     int data;
-    Node* next;
+    node* next;
 };
 
-int main() {
-    Node* head = new Node{10, nullptr};
-    head->next = new Node{20, nullptr};
-    head->next->next = new Node{30, nullptr};
-    head->next->next->next = new Node{40, nullptr};
-    head->next->next->next->next = new Node{50, nullptr};
+int main(){
+    int n;
+    cout << "Enter the number of nodes: " << endl;
+    cin >> n;
 
-    Node* temp = head;
+    node* head = NULL;
+    node* temp = NULL;
 
-    while (temp != nullptr) {
-        cout << temp->data << " ";
+    for(int i=1;i<=n;i++){
+        int value;
+        cout << "Enter value of node" << endl;
+        cin >> value;
+
+        node* Newnode = new node;
+        Newnode->data = value;
+        
+        if(head == NULL){
+            head = Newnode;
+            temp = head;
+        }else{
+            temp->next = Newnode;
+            temp = Newnode;
+        }   
+    }
+    cout << "Display Linked List" << endl;
+    temp = head;
+    while(temp!= NULL){
+        cout << temp->data << " " << endl;
         temp = temp->next;
     }
-
+    
     return 0;
 }
