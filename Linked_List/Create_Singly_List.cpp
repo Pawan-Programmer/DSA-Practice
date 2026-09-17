@@ -20,7 +20,7 @@ int main(){
 
     for(int i=1;i<=n;i++){
         int value;
-        cout << "Enter value of node" << endl;
+        cout << "Enter " << i << " value of node" << endl;
         cin >> value;
 
         node* Newnode = new node;
@@ -40,6 +40,6 @@ int main(){
         cout << temp->data << " " << endl;
         temp = temp->next;
     }
-    
+
     return 0;
 }
