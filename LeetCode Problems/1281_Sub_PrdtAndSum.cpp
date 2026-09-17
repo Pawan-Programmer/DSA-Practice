@@ -8,7 +8,7 @@ int main(){
     cin >> n ;
     while(n > 0)
     {
-        rem = n % 10;
+        rem = n % 10 ;
         sum += rem;
         product *= rem;
         n = n / 10;

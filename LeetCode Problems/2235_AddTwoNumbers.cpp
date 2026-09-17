@@ -7,7 +7,7 @@ int sum(int num1 , int num2){
 }
 
 int main(){
-    int num1 , num2;
+    int num1 , num2 ;
     cout << "Enter two numbers: " << endl;
     cin >> num1 >> num2 ;
     sum(num1 , num2);
