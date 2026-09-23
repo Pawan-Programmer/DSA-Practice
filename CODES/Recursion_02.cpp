@@ -1,21 +1,19 @@
 #include <iostream>
 using namespace std;
 
-void fact(int n){
-    int value ;
-    if(n==0){
-        return ;
+
+int SumDigit(int n){
+    int digit ;
+    if(n == 0){
+        return 0;
     }
-    else{
-        value = n * fact(n-1);
-    }
-    return value;
+    digit = n % 10;
+    return SumDigit(n/10) + digit;
 }
 
 int main(){
-    int n;
-    cout << "Enter size : " ;
-    cin >> n;
-    fact(n);
-    return 0;
+    int n ;
+    cout << "Enter a Number: ";
+    cin >> n ;
+    cout << SumDigit(n);
 }
