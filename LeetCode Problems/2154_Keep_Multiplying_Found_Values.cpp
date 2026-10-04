@@ -17,7 +17,7 @@ int findFinalValue(vector<int>& nums, int original) {
 }
 
 int main() {
-    vector<int> nums = {5, 3, 6, 1, 12, 24};
+    vector<int> nums = {5, 3, 6, 1, 12,24};
     int original = 3;
     cout << "Array elements: ";
     for(int num : nums) {
